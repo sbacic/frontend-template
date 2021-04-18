@@ -1,5 +1,13 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications"
+  "editor.formatOnSaveMode": "modifications",
+  "conventionalCommits.scopes": [
+    "IDE",
+    "i18n",
+    "UI",
+    "infrastructure",
+    "dependencies",
+    "tests"
+  ]
 }
