@@ -1,5 +1,6 @@
-import '../styles/globals.css'
+import 'styles/globals.css'
 import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'
+import 'i18n'
 
 const desktops = [
   {

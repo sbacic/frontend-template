@@ -2,7 +2,7 @@ const path = require('path')
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 // You need to manually add all the directories that contain stories
-const stories = ['pages', 'components']
+const stories = ['pages', 'components', 'tests']
   .map((value) => [`../${value}/**/*.stories.mdx`, `../${value}/**/*.stories.@(js|jsx|ts|tsx)`])
   .flat()
 
@@ -12,7 +12,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-viewport',
-    '@storybook/addon-addon-a11y',
+    '@storybook/addon-a11y',
     '@storybook/addon-backgrounds',
   ],
   webpackFinal: (config) => {
