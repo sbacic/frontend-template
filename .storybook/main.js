@@ -14,6 +14,7 @@ module.exports = {
     '@storybook/addon-viewport',
     '@storybook/addon-a11y',
     '@storybook/addon-backgrounds',
+    'storybook-css-modules-preset',
   ],
   webpackFinal: (config) => {
     config.resolve.plugins = [
