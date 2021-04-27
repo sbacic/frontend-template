@@ -5,9 +5,6 @@ import Index from 'pages/index'
 export default {
   title: 'Pages/Index',
   component: Index,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
 } as Meta
 
 const Template: Story = () => <Index />

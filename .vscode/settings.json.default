@@ -8,6 +8,7 @@
     "UI",
     "infrastructure",
     "dependencies",
-    "tests"
+    "tests",
+    "stories"
   ]
 }
