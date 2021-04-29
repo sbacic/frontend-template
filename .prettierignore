@@ -3,3 +3,4 @@ node_modules
 .next
 public
 out
+storybook-static

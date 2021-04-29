@@ -4,3 +4,4 @@ node_modules
 public
 .vscode
 jest.transform.js
+storybook-static
