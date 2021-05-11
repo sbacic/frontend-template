@@ -74,7 +74,10 @@ Run the visual regression test for stories in tests. Storybook must be running o
 
 ## IDE integration
 
-There are default settings for VisualStudio Code in `.vscode`. I suggest you also install the following extensions:
+There are default settings for VisualStudio Code in `.vscode`. You need to remove the `.default` suffix from the file names in order for them to apply.
+Your personal settings should _not_ be added to version control, only the defaults.
+
+Also, I suggest you also install the following extensions in VSCode:
 
 - Conventional Commits
 - ESLint
