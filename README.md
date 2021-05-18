@@ -62,7 +62,7 @@ Generates a build of your storybook to `storybook-static`, suitable for serving 
 
 `yarn publish-storybook`
 
-Publishes storybook to Github pages. `storybook-static` must not be in `.gitignore` for this to work.
+Publishes storybook to Github pages. Your storybook will then be available at `https://[USERNAME].github.io/[PROJECT]/index.html`
 
 `yarn test:ui`
 
