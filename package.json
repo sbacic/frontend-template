@@ -11,7 +11,7 @@
     "test": "jest --testPathIgnorePatterns=\"storyshots\"",
     "test:pages": "jest --testPathPattern=\"Pages.storyshots\"",
     "test:ui": "jest --testPathPattern=\"UI.storyshots\"",
-    "storybook": "start-storybook -p 6006 -s ./public",
+    "storybook": "start-storybook -p 6006 -s ./public --ci",
     "build-storybook": "build-storybook -s public",
     "publish-storybook": "build-storybook && gh-pages -d storybook-static"
   },
