@@ -23,6 +23,18 @@ module.exports = {
       }),
     ]
 
+    const rules = config.module.rules
+    const fileLoaderRule = rules.find((rule) => rule.test.test('.svg'))
+    fileLoaderRule.exclude = /\.svg$/
+
+    rules.push({
+      test: /\.svg$/,
+      issuer: {
+        test: /\.tsx?$/,
+      },
+      use: ['@svgr/webpack'],
+    })
+
     return config
   },
 }
