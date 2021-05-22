@@ -91,6 +91,34 @@ Currently, only stories in `components` and `tests` are being picked up - if you
 Do not commit visual regression tests to version control - they bloat the repo size too much to be worth it.
 `storybook-static` _should_ be added to version control in order to publish it to Github Pages. If you are not publishing it, or if you're publishing it somewhere else, feel free to add that directory to `.gitignore`.
 
+## Fonts
+
+Adding a new custom font is a three step process:
+
+1. Add the font files to `public/fonts/[FONT_NAME]/*`
+2. Add the font family to `global.css` like so:
+
+```scss
+@font-face {
+  font-family: 'Futura';
+  src: url('/fonts/Futura/Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; // Review the documentation for font-display to find the setting best suited for your use case
+}
+```
+
+3. Preload the fonts by adding this code snippet to `<head>` tag.
+
+```HTML
+<link
+    rel="preload"
+    href="/fonts/Futura/Regular.otf"
+    as="font"
+    type="font/otf"
+/>
+```
+
 ## Caveats
 
 At the time of writing, there is no support for lazy loading of i18n files. While there are solutions for NextJS that add that functionality,
